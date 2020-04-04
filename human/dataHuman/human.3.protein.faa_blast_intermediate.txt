@@ -1,0 +1,3 @@
+Queryid	SSeqid	perc_identity	evalue	bit_score	alignment_length	query_length	subject_length
+tr|Q14VH5|Q14VH5_9HIV1	gi|767953451|ref|XP_011515532.1|	31.579	2.39e-11	61.6	114	346	307
+tr|Q14VH5|Q14VH5_9HIV1	gi|767953449|ref|XP_011515531.1|	31.579	2.39e-11	61.6	114	346	307

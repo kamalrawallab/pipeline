@@ -1,0 +1,159 @@
+1.
+>YAL001C 
+len sequence: 1161
+
+  1.) Possible transmembrane helices
+  ==================================
+  The sequence positions in brackets denominate the core region.
+  Only scores above 500 are considered significant.
+
+  Inside to outside helices : 1 found
+  from: 1090 (1090)      to: 1111 (1108)      score: 55      center: 1100
+
+  Outside to inside helices : 2 found
+  from: 1005 (1005)      to: 1024 (1024)      score: 265      center: 1015
+  from: 1090 (1093)      to: 1113 (1110)      score: 227      center: 1101
+
+  2.) Table of correspondences
+  ============================
+  Here is shown, which of the inside->outside helices correspond
+  to which of the outside->inside helices.
+    Helices shown in brackets are considered insignificant.
+    A + symbol indicates a preference of this orientation.
+    A ++ symbol indicates a strong preference of this orientation.
+
+      inside->outside   |   outside->inside
+                        |                  
+( 1005-1024 (20) 265 ++ )
+( 1090-1111 (22) 55    ) | ( 1090-1113 (24) 227  + )
+
+
+  3.) Suggested models for transmembrane topology
+  ===============================================
+  These suggestions are purely speculative and should be used with
+  EXTREME CAUTION since they are based on the assumption that
+  all transmembrane helices have been found.
+  In most cases, the Correspondence Table shown above or the
+  prediction plot that is could also be created should be used for the
+  topology assignment of unknown proteins.
+
+  2 possible models considered, only significant TM-segments used
+
+
+  !!! probably no transmembrane protein - no possible model found !!!
+
+
+2.
+>PFI1475w
+len sequence: 1720
+
+  1.) Possible transmembrane helices
+  ==================================
+  The sequence positions in brackets denominate the core region.
+  Only scores above 500 are considered significant.
+
+  Inside to outside helices : 2 found
+  from: 3 (3)      to: 20 (20)      score: 2058      center: 12
+  from: 1703 (1703)      to: 1720 (1720)      score: 2481      center: 1712
+
+  Outside to inside helices : 2 found
+  from: 3 (3)      to: 19 (19)      score: 1684      center: 11
+  from: 1703 (1703)      to: 1720 (1720)      score: 2644      center: 1712
+
+  2.) Table of correspondences
+  ============================
+  Here is shown, which of the inside->outside helices correspond
+  to which of the outside->inside helices.
+    Helices shown in brackets are considered insignificant.
+    A + symbol indicates a preference of this orientation.
+    A ++ symbol indicates a strong preference of this orientation.
+
+      inside->outside   |   outside->inside
+  3-20 (18) 2058 ++   |   3-19 (17) 1684     
+  1703-1720 (18) 2481      |   1703-1720 (18) 2644  +  
+
+
+  3.) Suggested models for transmembrane topology
+  ===============================================
+  These suggestions are purely speculative and should be used with
+  EXTREME CAUTION since they are based on the assumption that
+  all transmembrane helices have been found.
+  In most cases, the Correspondence Table shown above or the
+  prediction plot that is could also be created should be used for the
+  topology assignment of unknown proteins.
+
+  2 possible models considered, only significant TM-segments used
+
+
+  -----> STRONGLY prefered model: N-terminus inside
+  2 strong transmembrane helices, total score : 4702
+  #  from   to  length   score  orientation 
+  1   3   20  (18)      2058    i-o
+  2   1703   1720  (18)      2644    o-i
+
+  ------> alternative model
+  2 strong transmembrane helices, total score : 4165
+  #  from   to  length   score  orientation 
+  1   3   19  (17)      1684    o-i
+  2   1703   1720  (18)      2481    i-o
+
+
+
+3.
+>PF3D7_0109100.1-p1 | transcript=PF3D7_0109100.1 | gene=PF3D7_0109100 | organism=Plasmodium_falciparum_3D7 | gene_product=LCCL domain-containing protein | transcript_product=LCCL domain-containing protein | location=Pf3D7_01_v3:365610-368795(+) | protein_length=1029 | sequence_SO=chromosome | SO=protein_coding
+len sequence: 1029
+
+  1.) Possible transmembrane helices
+  ==================================
+  The sequence positions in brackets denominate the core region.
+  Only scores above 500 are considered significant.
+
+  Inside to outside helices : 3 found
+  from: 1 (1)      to: 19 (19)      score: 1015      center: 9
+  from: 476 (476)      to: 500 (494)      score: 624      center: 485
+  from: 824 (824)      to: 851 (842)      score: 204      center: 834
+
+  Outside to inside helices : 2 found
+  from: 1 (1)      to: 19 (19)      score: 1229      center: 9
+  from: 475 (477)      to: 497 (494)      score: 536      center: 485
+
+  2.) Table of correspondences
+  ============================
+  Here is shown, which of the inside->outside helices correspond
+  to which of the outside->inside helices.
+    Helices shown in brackets are considered insignificant.
+    A + symbol indicates a preference of this orientation.
+    A ++ symbol indicates a strong preference of this orientation.
+
+      inside->outside   |   outside->inside
+  1-19 (19) 1015      |   1-19 (19) 1229 ++  
+  476-500 (25) 624  +   |   475-497 (23) 536     
+( 824-851 (28) 204 ++ ) | 
+
+
+  3.) Suggested models for transmembrane topology
+  ===============================================
+  These suggestions are purely speculative and should be used with
+  EXTREME CAUTION since they are based on the assumption that
+  all transmembrane helices have been found.
+  In most cases, the Correspondence Table shown above or the
+  prediction plot that is could also be created should be used for the
+  topology assignment of unknown proteins.
+
+  2 possible models considered, only significant TM-segments used
+
+
+  -----> STRONGLY preferred model: N-terminus inside
+  2 strong transmembrane helices, total score : 1853
+  #  from   to  length   score  orientation 
+  1   1   19  (19)      1229    o-i
+  2   476   500  (25)      624    i-o
+
+  ------> alternative model
+  2 strong transmembrane helices, total score : 1551
+  #  from   to  length   score  orientation 
+  1   1   19  (19)      1015    i-o
+  2   475   497  (23)      536    o-i
+
+
+

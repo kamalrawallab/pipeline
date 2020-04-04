@@ -1,0 +1,7 @@
+#
+# Alias file created 07/21/2015 11:10:42
+#
+TITLE database all
+DBLIST "human.1.protein.faa" "human.2.protein.faa" "human.3.protein.faa" "human.4.protein.faa" "human.5.protein.faa" "human.6.protein.faa" "human.7.protein.faa" "human.8.protein.faa" "human.9.protein.faa" "human.10.protein.faa" "human.11.protein.faa" "human.12.protein.faa" "human.13.protein.faa" "human.14.protein.faa" "human.15.protein.faa" "human.16.protein.faa" "human.17.protein.faa" "human.18.protein.faa" "human.19.protein.faa" "human.20.protein.faa" "human.21.protein.faa" "human.22.protein.faa" "human.23.protein.faa" "human.24.protein.faa" 
+NSEQ 99844
+LENGTH 65274452

@@ -1,0 +1,36 @@
+#! /bin/tcsh -f
+
+# NetChop. Proteasomal cleavage predictor.
+#
+# Morten Nielsen. mniel@cbs.dtu.dk
+# 
+#
+# 
+
+###############################################################################
+#       GENERAL SETTINGS, CUSTOMIZE TO YOUR SITE
+###############################################################################
+
+# full path to the NetChop directory (mandatory)
+setenv  NMHOME  /home/shreya/pipeline/tools/netchop-3.1
+
+# determine where to store temporary files (must be writable to all users)
+
+if ( ${?TMPDIR} == 0 ) then
+        setenv  TMPDIR  /tmp
+endif
+
+# determine platform (do not change this unless you don't have 'uname'!)
+set  UNIX = `uname -s`
+set  AR = `uname -m`
+
+set PLATFORM = `echo $UNIX $AR | awk '{print $1"_"$2}'`
+
+setenv NETCHOP $NMHOME/$PLATFORM
+
+# main ========================================================================
+if ( -x $NETCHOP/bin/netChop ) then
+   $NETCHOP/bin/netChop $*
+else
+   echo netChop: no binaries found for $PLATFORM $NETCHOP/bin/netChop
+endif

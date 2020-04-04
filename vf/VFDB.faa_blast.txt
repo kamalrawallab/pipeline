@@ -1,0 +1,5 @@
+# BLASTP 2.10.0+
+# Query: ASR74381.1 capsid, partial [Sapovirus GI.7]
+# Database: User specified sequence set (Input: /home/shreya/pipeline/tools/vf/dataVF/VFDB.faa)
+# 0 hits found
+# BLAST processed 1 queries

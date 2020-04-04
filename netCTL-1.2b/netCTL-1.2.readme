@@ -1,0 +1,106 @@
+
+
+   NetCTL 1.2               INSTALLATION INSTRUCTIONS
+
+
+   NetCTL 1.2 software predicts CTL epitopes in protein sequences integrating
+   prediction of peptide MHC binding, proteasomal C terminal cleavage and TAP
+   transport efficiency. The method is described in detail as follows.
+
+   Current version:
+
+   Large-scale validation of methods for cytotoxic T-lymphocyte epitope
+   prediction.
+   Larsen MV, Lundegaard C, Lamberth K, Buus S, Lund O, and Nielsen M.
+   BMC Bioinformatics, 8:424, 2007
+
+   Original NetCTL paper:
+
+   An integrative approach to CTL epitope prediction. A combined algorithm
+   integrating MHC-I binding, TAP transport efficiency, and proteasomal
+   cleavage predictions.
+   Larsen MV, Lundegaard C, Lamberth K, Buus S, Brunak S, Lund O
+   and Nielsen M.
+   European Journal of Immunology, 35(8):2295-303, 2005
+
+   More information about the method can be found at:
+   
+       http://www.cbs.dtu.dk/services/NetCTL/
+
+
+   DOWNLOAD
+
+   Academic users:
+
+       http://www.cbs.dtu.dk/cgi-bin/nph-sw_request?netCTL
+   
+   Other users:
+
+       By special agreement only; contact software@cbs.dtu.dk for details.
+
+
+   PRE-INSTALLATION
+
+   NetCTL 1.2  will run  on the most common UNIX platforms  e.g. Linux, SunOS
+   etc. The package consists of two files:
+  
+      netCTL-1.2.readme           this file
+      netCTL-1.2.<unix>.tar.Z     compressed TAR archive
+
+   where 'unix' is the UNIX platform on which you are about to install. After
+   installation the software will occupy less than 10 Mb of diskspace.
+
+
+   INSTALLATION
+
+   1. Uncompress and untar the package:
+
+      cat netCTL-1.2.<unix>.tar.Z | uncompress | tar xvf -
+
+      This will produce a directory 'netCTL-1.2'.
+
+   2. In the script  'netCTL' in that directory  locate  the section starting
+      with "GENERAL SETTINGS: CUSTOMIZE TO YOUR SITE".  Set the following two
+      variables:
+
+      CTLHOME   full path to the 'netCTL-1.2' directory on your system
+      TMPDIR    e.g. /var/tmp
+
+      Make sure  that TMPDIR has the sticky bit set  (the long listing should
+      render 'drwxrwxrwt ...'). If not, set it:
+
+      chmod 1777 $TMPDIR
+
+      The setting of the variables  UNIX and AR  should not be changed unless
+      the 'uname' program on your system is not standard.
+
+   3. In the 'netCTL-1.2' directory test the software:
+
+      ./netCTL test/test.fsa > test.out
+
+      The result file 'test.out' should only differ  from the file 'test.out'
+      in 'netCTL-1.2/test' in the site specific file system location details.
+
+   4. a. Copy or link the 'netCTL' script to a directory in the users' path.
+
+      b. Copy the 'netCTL.1' file to a location in your manual system. If you
+         need a compiled version try running:
+
+         man -d netCTL.1 | compress >netCTL.Z
+
+         or:
+
+         neqn netCTL.1 | tbl | nroff -man | col | compress >netCTL.Z
+
+   5. Enjoy ...
+
+
+   PROBLEMS
+
+   Contact packages@cbs.dtu.dk in case of problems.
+   
+   Questions on the scientific aspects of the NetCTL method should be sent to
+   Morten Nielsen, mniel@cbs.dtu.dk.
+
+   CBS, 7 Mar 2008
+   K. Rapacki

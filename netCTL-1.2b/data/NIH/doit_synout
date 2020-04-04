@@ -1,0 +1,42 @@
+#! /bin/tcsh
+
+foreach all ( `cat ../../lib/data/method.list.CTL | xC | args 3 ` )
+
+set nih=`cat ../../lib/data/method.list.CTL | grep $all | args 4`
+
+mkdir -p $nih
+
+mkdir -p $nih/$all
+
+mkdir -p $nih/$all/pred
+
+mkdir -p $nih/$all/pred/NN
+
+mkdir -p $nih/$all/pred/NN/sparse+hmm
+mkdir -p $nih/$all/pred/NN/bl50+hmm
+mkdir -p $nih/$all/pred/NN/mat
+
+mkdir -p $nih/$all/pred/NN/sparse+hmm/SYN
+mkdir -p $nih/$all/pred/NN/bl50+hmm/SYN
+
+foreach s ( `cat $VACHOME/data/Buus_peptides/NIH/$nih/$all/pred/NN/sparse+hmm/synlist | args 1` )
+
+cp $s $nih/$all/pred/NN/sparse+hmm/SYN
+
+end
+
+ls -ltr $nih/$all/pred/NN/sparse+hmm/SYN/* | args 9 | nawk '{print "$NETCTL/data/NIH/"  substr($1,1,length($1))}' > $nih/$all/pred/NN/sparse+hmm/synlist
+
+foreach s ( `cat $VACHOME/data/Buus_peptides/NIH/$nih/$all/pred/NN/bl50+hmm/synlist | args 1` )
+
+cp $s $nih/$all/pred/NN/bl50+hmm/SYN
+
+end
+
+ls -ltr $nih/$all/pred/NN/bl50+hmm/SYN/* | args 9 | nawk '{print "$NETCTL/data/NIH/" substr($1,1,length($1))}' > $nih/$all/pred/NN/bl50+hmm/synlist
+
+cp $VACHOME/data/Buus_peptides/NIH/$nih/$all/pred/NN/mat/gibbsmat $nih/$all/pred/NN/mat
+
+end
+
+		

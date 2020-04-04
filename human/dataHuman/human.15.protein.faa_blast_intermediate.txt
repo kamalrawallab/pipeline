@@ -1,0 +1,2 @@
+Queryid	SSeqid	perc_identity	evalue	bit_score	alignment_length	query_length	subject_length
+sp|P17282|GAG_SIVCZ	gi|767928154|ref|XP_011511643.1|	27.000	1.45e-16	80.5	200	508	708

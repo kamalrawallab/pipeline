@@ -1,0 +1,14 @@
+#!/bin/bash
+
+unset LD_LIBRARY_PATH;
+
+export PATH=/opt/csw/bin/:$PATH;
+
+export XFILESEARCHPATH;
+XFILESEARCHPATH=/opt/csw/lib/X11/%T/%N%C:/usr/openwin/lib/X11/%T/%N%C;
+
+FILENAME=`basename $0`
+# FILENAME= echo $FILENAME | gsed -e 's/.wrapped//'>/dev/null;
+FILENAME=`echo $FILENAME | gsed -e 's/.wrapped//'`
+
+exec /opt/csw/bin/$FILENAME "$@";

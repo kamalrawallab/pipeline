@@ -1,0 +1,2 @@
+Queryid	SSeqid	perc_identity	evalue	bit_score	alignment_length	query_length	subject_length
+tr|Q68287|Q68287_9FLAV	gi|67782362|ref|NP_061903.2|	36.905	5.96e-07	51.2	84	873	1369

@@ -1,0 +1,3 @@
+Queryid	SSeqid	perc_identity	evalue	bit_score	alignment_length	query_length	subject_length	Query_Coverage	Query_Protein_name	Subject_Protein_name
+sp|P0C797|NCAP_BDVV	gi|315633211|ref|NP_001186867.1|	40.058	1.9999999999999997e-83	256.0	342	370	366	0.9243243243243243	Nucleoprotein OS=Borna disease virus (strain V) OX=928296 GN=N PE=1 SV=1 	endogenous Bornavirus-like nucleoprotein 1 [Homo sapiens] 
+sp|P0C796|NCAP_BDV1	gi|315633211|ref|NP_001186867.1|	40.351	4.469999999999999e-84	258.0	342	370	366	0.9243243243243243	Nucleoprotein OS=Borna disease virus 1 OX=1714621 GN=N PE=1 SV=1 	endogenous Bornavirus-like nucleoprotein 1 [Homo sapiens] 
